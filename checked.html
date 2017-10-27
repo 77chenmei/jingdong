@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>全选</button>
+	<button>取消选择</button>
+	<button>反选</button>
+	<button>删除</button>
+	<div class="div">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+	</div>
+</body>
+</html>
+<script>
+	window.onload =function(){
+		var btn = document.getElementsByTagName('button');
+		//button可以使用input中的button，我这里是为了避免冲突
+		var div = document.querySelector('.div');
+		//将checked放入一个div中，可以避免与之前的btn冲突；
+		var inp = div.getElementsByTagName('input');
+		btn[0].onclick =function(){
+			for(var i =0;i<inp.length;i++){
+				inp[i].checked = true;
+			}
+		}
+		btn[1].onclick =function(){
+			for(var i =0;i<inp.length;i++){
+				inp[i].checked = false;
+			}
+		}
+		btn[2].onclick =function(){
+			for(var i =0;i<inp.length;i++){
+				if(inp[i].checked == true){
+					inp[i].checked = false;	
+				}else{
+					inp[i].checked = true;
+				}
+			}
+		}
+		btn[3].onclick =function(){
+			for(var i =0;i<inp.length;i++){
+				if(inp[i].checked == true){
+					inp[i].style.display = 'none';	
+				}
+			}
+		}
+	} 
+</script>
+<!-- // 获取节点：
+		  // document.getElementById();
+		  //通过标签名获取节点(集合)+索引[]来确定选取的是哪一个
+		  // document.getElementsByTagName();
+		  //通过class名获取节点(获取的是一个集合)+索引[]来确定选取的是哪一个
+		  // document.getElementsByClassName();
+		  //利用css选择器获取节点
+		  //document.querySelectorAll();
+		  //()里面可以是标签名、id名或者class名，获取的是一个集合,+索引[]来确定选取的是哪一个
+		  // document.querySelector();//获取是一个节点
+//onload 事件：
+    当页面完全加载完，触发onload事件;
+    代码是从上往下进行执行的，当js放在head或者body中是会出现页面还未加载完成，js中的代码已经被执行，导致整个js功能不能全部实现，这个时候需要加入onload。
+ -->
