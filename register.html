@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+</head>
+<body>
+	<!--header-->
+	<div class="head">
+		<header>
+		    <a href="https://www.jd.com/">
+		    	<img src="img/register/logo.png"></a>
+		    <b>欢迎注册</b>
+	        <span>已有账号？<a href="login.html">请登录</a></span>
+	    </header> 	
+	    <div class="line"></div>
+	</div>
+	<!--container -->
+	<div class="container">
+		<div class="register">
+			<div class ="main">
+				<div class="alike" id ="username">
+					<div class="box">
+						<span>用户名</span>
+						<input type="text" placeholder="您的账户和登录名" class="inp">
+						<i id="wait"></i>
+					</div>
+					<div id="hint1" class="hint">
+						<i class="icon"></i>
+						<p>支持中文、字母、数字、“-”、"＿"的组合，4-20个字符</p>
+					</div>
+					<div id="warn1" class="warn">
+						<div></div>
+						<p>请输入用户名</p>
+					</div>
+				</div>
+				<div class="alike" id ="setPassword">
+					<div class="box">
+						<span>设置密码</span>
+						<input type="text" placeholder="建议至少使用两种字符组合" class="inp">
+					</div>
+					<div id="hint2" class="hint">
+						<i class="icon"></i>
+						<p>建议使用字母、数字和符号两种及以上的组合，6-20个字符</p>
+					</div>
+					<div id="warn2" class="warn">
+						<div></div>
+						<p>请输入密码</p>
+					</div>
+				</div>
+				<div class="alike" id ="Password">
+					<div class="box">
+						<span>确认密码</span>
+						<input type="text" placeholder="请再次输入密码" class="inp">
+					</div>
+					<div id="hint3" class="hint">
+						<i class="icon"></i>
+						<p>请再次输入密码</p>
+					</div>
+					<div id="warn3" class="warn">
+						<div></div>
+						<p>请再次输入密码</p>
+					</div>
+				</div>
+				<div class="alike" id ="email">
+					<div class="box">
+						<span>邮箱验证</span>
+						<input type="text" placeholder="请再次输入密码" class="inp">
+					</div>
+					<div id="hint4" class="hint">
+						<i class="icon"></i>
+						<p>建议使用常用邮箱</p>
+					</div>
+	           		<a href="#phone" id="ba1" >手机注册</a>
+					<div id="warn4" class="warn">
+						<div></div>
+						<p>完成验证后，你可以用该邮箱登录和找回密码</p>
+					</div>
+				</div>
+				<div class="alike" id ="phone">
+				    <div class="box">
+						<span>中国0086<a href="" id="phoneA">&#xe6a6;</a></span>
+						<input type="text" placeholder="请再次输入密码" class="inp">
+					</div>
+					<div id="hint5" class="hint">
+						<i class="icon"></i>
+						<p>建议使用常用手机</p>
+					</div>
+					<a href="#email" id="ba2">邮箱注册</a>
+					<div id="warn5" class="warn">
+						<div></div>
+						<p>完成验证后，你可以用手机登录和找回密码</p>
+					</div>
+				</div>	
+				<div class="alike" id ="authcode">
+					<div class="box">
+						<span>验证码</span>
+						<img src="img/register/yzm1.png" title="换一换" id="validator">
+						<input type="text" placeholder="请输入验证码" class="inp">
+					</div>
+					<div id="hint6" class="hint">
+						<i class="icon"></i>
+						<p>看不清？点击图片更换验证码</p>
+					</div>
+					<div id="warn6" class="warn">
+						<div></div>
+						<p>完成验证后，你可以用该邮箱登录和找回密码</p>
+					</div>
+				</div>
+				<div class="alike" id ="phonecode">
+					<div class="box">
+						<span>手机验证码</span>
+						<input type="button" value ="获取验证码" id="getCode">
+						<input type="text" placeholder="请输入手机验证码" class="inp">
+					</div>
+					<div id="hint7" class="hint"></div>
+					<div id="warn7" class="warn">
+						<div></div>
+						<p>完成验证后，你可以用该邮箱登录和找回密码</p>
+					</div>
+				</div>			
+				<div id="search">
+					<div class="search1">
+						<div class="search-bar">
+							<i class="search-icon"></i>
+							<input type="search" placeholder="搜索您的国家和地区">
+						</div>
+						<iframe src="">
+					
+				   		</iframe>
+					</div>
+					<i class="arrow"></i>
+				</div>
+				<input type="button" id="register" value ="立即注册">
+			</div>
+			<div class="companty">
+		        <div class="com1">
+					<div class="s1"></div>
+						<a href="https://reg.jd.com/reg/company">企业用户注册</a>
+				</div>
+				<div class="com2">
+					<div class="s2"></div>
+					<a href="https://reg.joybuy.com/reg/person.html">INTERNATIONAL CUSTOMERS</a>
+				</div>
+	   		</div>
+		</div>
+	</div>
+    <div class="footer">
+		<table>
+			<tr>
+				<td><a href="https://www.jd.com">关于我们</a></td>
+				<td><a href="https://www.jd.com/contact/">联系我们</a></td>
+				<td><a href="https://zhaopin.jd.com/">人才招聘</a></td>
+				<td><a href="http://sale.jd.com/act/wQTpIm7GnXE.html">商家入驻</a></td>
+				<td><a href="https://www.jd.com/intro/service.aspx">广告服务</a></td>
+				<td><a href="https://app.jd.com/">手机京东</a></td>
+				<td><a href="https://media.jd.com/">销售联盟</a></td>
+				<td><a href="http://sale.jd.com/act/n0hAvqy5CW8.html">京东社区</a></td>
+				<td><a href="https://gongyi.jd.com/">京东公益</a></td>
+				<td><a href="https://www.joybuy.com/">English Site</a></td>
+			</tr>
+		</table>
+		<div>Copyright © 2004-2017  京东JD.com 版权所有</div>
+	</div>
+</body>
+</html>
+<script src ="js/register.js"></script>

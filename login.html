@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+	    <a href="https://www.jd.com/">
+		    <img src="img/login/logo.png">
+	    </a>
+		<p class="welcome">欢迎注册</p>
+		<img src="img/login/q-icon.png" class="icon-q">
+	    <a href="https://surveys.jd.com/index.php?r=survey/index/sid/568245/lang/zh-Hans" class="question">登录页面，调查问卷</a>
+	</div>
+	<!-- warn -->
+	<div class="warn">
+	    	<div class="word">
+	    		<div class="wb"></div>&nbsp;&nbsp;&nbsp;&nbsp;
+	    		<span>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。
+	    		</span>
+	    	</div>
+	    </div>
+	<!--center-->
+    <div class="center">
+	    <div class="layout">
+	    	<div class="banner"></div>
+	    	<!-- 登录框 -->
+	    	<article id="art">
+	    		<header>
+	    			<ul class="uTop">
+						<li id="sm" onclick="test(1)">扫码登录</li>
+	                     <li>｜</li>
+					    <li id="dl" onclick="test(2)">账户登录</li> 
+			        </ul>
+	    		</header>
+	    		<section>
+	    			<div id="dll">
+	    				<div id="pp">
+	    					<div class="wa"></div>
+	    					<p id ="demo"></p>
+	    				</div>
+			    		<div class="inp name" id="a1">
+			    			<div id="icon1" class="icon"></div>
+			    	    	<input type="text" id="username" class="unm" placeholder="邮箱/用户名/已验证手机" >
+			    	    	<div class="close" id="close1" class="close"></div>
+			        	</div>
+			        	<div class="inp pa" id="a2">
+			        		<div id="icon2" class="icon"></div>
+			    	    	<input type="password" id="password" placeholder="密码"  class="unm">
+			    	    	<div class="close" id="close2" class="close"></div>
+			    	    </div>
+			    	    <p class="p1">忘记密码</p> 
+			    	    <input type="button" value="登 录" class="qd" onclick="require()">
+			        </div>
+			        <div id="smm" >
+			    		<div class="left">
+			    			<img src="img/login/show.png" class="m1">
+			    		</div>
+			    		<img src="img/login/ph.png" class="m2">
+			    		<div class="word">
+			    			打开<a href="http://app.jd.com/">手机京东</a>&nbsp;扫描二维码
+			    		</div>
+			    		<div class="bot">
+			    			<div class="s s1">
+			    				<div class="a"></div>
+			    				<p>免输入</p>
+			    			</div>
+			    			<div class="s s2">
+			    				<div class="a"></div>
+			    				<p>更快</p>
+			    			</div>
+			    			<div class="s s3">
+			    				<div class="a"></div>
+			    				<p>更安全</p>
+			    			</div>
+			    		</div>
+			   		</div> 
+	    		</section>
+	    		<footer>
+	    			<ul id="uBottom">
+			    	 	<li>
+			    	 		<div class="f1 f"></div>
+			    	 		<a href="https://graph.qq.com" class="a1">QQ</a>
+			    	 	</li>
+			    	 	<li>｜</li>
+			    	 	<li>
+			    	 		<div class="f2 f"></div>
+			    	 		<a href="https://open.weixin.qq.com" class="a2">微信</a>
+			    	 	</li>
+			    	 	<li>
+			    	 		<div class="f3 f"></div>
+			    	 		<a href="register.html" class="a3">立即注册</a>
+			    	 	</li>
+			    	</ul>
+	    		</footer>
+	    	</article>
+	    </div>	
+	</div>   
+	<!--footer-->
+	<div class="footer">
+		<table> 
+			<tr>
+				<td><a href="https://www.jd.com">关于我们</a></td>
+				<td><a href="https://www.jd.com/contact/">联系我们</a></td>
+				<td><a href="https://zhaopin.jd.com/">人才招聘</a></td>
+				<td><a href="http://sale.jd.com/act/wQTpIm7GnXE.html">商家入驻</a></td>
+				<td><a href="https://www.jd.com/intro/service.aspx">广告服务</a></td>
+				<td><a href="https://app.jd.com/">手机京东</a></td>
+				<td><a href="https://club.jd.com/links.aspx">友情链接</a></td>
+				<td><a href="https://media.jd.com/">销售联盟</a></td>
+				<td><a href="http://sale.jd.com/act/n0hAvqy5CW8.html">京东社区</a></td>
+				<td><a href="https://gongyi.jd.com/">京东公益</a></td>
+				<td><a href="https://www.joybuy.com/">English Site</a></td>
+			</tr>
+		</table>
+		<div>Copyright © 2004-2017  京东JD.com 版权所有</div>
+	</div>
+</body>
+</html>
+<script src ="js/login.js"></script>
