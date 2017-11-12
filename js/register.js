@@ -1,11 +1,10 @@
-
- var ba1=document.getElementById('ba1');
- var ba2=document.getElementById('ba2');
- ba1.onclick =function(){
+var ba1=document.getElementById('ba1');
+var ba2=document.getElementById('ba2');
+ba1.onclick =function(){
  	document.getElementById('email').style.display ='none';
  	ba2.style.display ='block';
  }
- ba2.onclick =function(){
+ba2.onclick =function(){
  	document.getElementById('email').style.display ='block';
  	ba2.style.display ='none';
  }
